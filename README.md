@@ -76,5 +76,31 @@ This repository contains C++ implementations of common data structures:
   - Append elements.
   - Print all elements.
 - **Overall Time Complexity:**
-  - Total complexity: O(n):
+  - Total complexity: O(n)
+
+### 9. Binary Tree
+- A simple binary tree where each node has left and right children.
+- Supports:
+  - Manual insertion of nodes.
+  - Printing node values.
+- **Overall Time Complexity:**
+  - Total complexity: O(n)
+
+### 10. Binary Search Tree (BST)
+- A binary tree that maintains sorted order.
+- Supports:
+  - Inserting elements while keeping the tree sorted.
+  - Printing root and child nodes.
+- **Overall Time Complexity:**
+  - Insert: O(log n) average, O(n) worst case
+  - Search: O(log n) average, O(n) worst case
+
+### 11. Tree Traversal Algorithms
+- Tree traversal methods for binary trees.
+- Supports:
+  - Inorder traversal
+  - Preorder traversal
+  - Postorder traversal
+- **Overall Time Complexity:**
+  - Each traversal: O(n)
 
