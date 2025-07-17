@@ -1,106 +1,84 @@
 # data-structures-week-implementation
-# Data Structures Implementations
 
-This repository contains C++ implementations of common data structures:
+This repository contains C++ implementations of common data structures.
 
 ## Implemented Structures
 
 ### 1. Dynamic Array
 - A resizable array that doubles its capacity when full.
 - Supports adding, setting, getting, and printing elements.
-- **Overall Time Complexity:**
-  - Total complexity in a typical program run: O(n)
+- **Overall Time Complexity:** O(n)
 
 ### 2. Singly Linked List
 - A linked list where each node points to the next node.
 - Supports appending elements, deleting the front, and printing the list.
-- **Overall Time Complexity:**
-  - Total complexity in a typical program run: O(n)
+- **Overall Time Complexity:** O(n)
 
 ### 3. Stack (Array-based)
 - A stack implemented using an array.
 - Supports:
-  - `push(value)`: Add element to the top.
-  - `pop()`: Remove the top element.
-  - `top()`: View the top element.
-  - `isEmpty()`: Check if the stack is empty.
-  - `print()`: Print all elements.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+  - `push(value)`
+  - `pop()`
+  - `top()`
+  - `isEmpty()`
+  - `print()`
+- **Overall Time Complexity:** O(n)
 
 ### 4. Stack (Linked List-based)
 - A stack implemented using a linked list.
-- Supports:
-  - `push(value)`: Add element to the top.
-  - `pop()`: Remove the top element.
-  - `top()`: View the top element.
-  - `isEmpty()`: Check if the stack is empty.
-  - `print()`: Print all elements.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+- Supports the same operations as above.
+- **Overall Time Complexity:** O(n)
 
 ### 5. Queue (Array-based)
-- A queue implemented using an array.
+- Queue using an array.
 - Supports:
-  - `enqueue(value)`: Add element to the end.
-  - `dequeue()`: Remove the front element.
-  - `peek()`: View the front element.
-  - `isEmpty()`: Check if the queue is empty.
-  - `print()`: Print all elements.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+  - `enqueue(value)`
+  - `dequeue()`
+  - `peek()`
+  - `isEmpty()`
+  - `print()`
+- **Overall Time Complexity:** O(n)
 
 ### 6. Queue (Linked List-based)
-- A queue implemented using a linked list.
-- Supports:
-  - `enqueue(value)`: Add element to the end.
-  - `dequeue()`: Remove the front element.
-  - `peek()`: View the front element.
-  - `isEmpty()`: Check if the queue is empty.
-  - `print()`: Print all elements.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+- Queue using a linked list.
+- Same operations as array-based queue.
+- **Overall Time Complexity:** O(n)
 
 ### 7. Doubly Linked List
-- A linked list where each node has a pointer to the next and the previous node.
-- Supports:
-  - Append elements.
-  - Print elements forward.
-  - Print elements backward.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+- Each node has a `next` and a `prev` pointer.
+- Can be traversed forward and backward.
+- **Overall Time Complexity:** O(n)
 
 ### 8. Circular Linked List
-- A linked list where the last node points to the first node.
-- Supports:
-  - Append elements.
-  - Print all elements.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+- The last node points back to the first.
+- Useful in scenarios where looping is needed.
+- **Overall Time Complexity:** O(n)
 
-### 9. Binary Tree
-- A simple binary tree where each node has left and right children.
+### 9. Min Heap
+- Binary heap that keeps the smallest element on top.
 - Supports:
-  - Manual insertion of nodes.
-  - Printing node values.
-- **Overall Time Complexity:**
-  - Total complexity: O(n)
+  - `insert(value)`
+  - `removeMin()`
+  - `getMin()`
+  - `print()`
+- **Time Complexity:**
+  - Insert: O(log n)
+  - RemoveMin: O(log n)
+  - GetMin: O(1)
 
-### 10. Binary Search Tree (BST)
-- A binary tree that maintains sorted order.
+### 10. Graph (Adjacency List)
+- A simple undirected graph using adjacency lists.
 - Supports:
-  - Inserting elements while keeping the tree sorted.
-  - Printing root and child nodes.
-- **Overall Time Complexity:**
-  - Insert: O(log n) average, O(n) worst case
-  - Search: O(log n) average, O(n) worst case
+  - `addEdge(u, v)`
+  - `printGraph()`
+- **Overall Time Complexity:** O(V + E)
 
-### 11. Tree Traversal Algorithms
-- Tree traversal methods for binary trees.
+### 11. Hash Table (with Collision Handling)
+- A basic hash table using chaining (linked lists) for collision resolution.
 - Supports:
-  - Inorder traversal
-  - Preorder traversal
-  - Postorder traversal
-- **Overall Time Complexity:**
-  - Each traversal: O(n)
+  - `insert(key, value)`
+  - `get(key)`
+  - `remove(key)`
+- **Average Time Complexity:** O(1)  
+- **Worst-case Time Complexity:** O(n) (if many collisions happen)
 
