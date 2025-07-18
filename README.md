@@ -80,5 +80,31 @@ This repository contains C++ implementations of common data structures.
   - `get(key)`
   - `remove(key)`
 - **Average Time Complexity:** O(1)  
-- **Worst-case Time Complexity:** O(n) (if many collisions happen)
+- **Worst-case Time Complexity:** O(n)
 
+### 12. Trie
+- Tree-like structure used to store words efficiently by character prefixes.
+- Supports:
+  - `insert(word)`
+  - `search(word)`
+  - `startsWith(prefix)`
+- **Time Complexity:**
+  - Insert: O(L)
+  - Search: O(L)
+  - startsWith: O(L)
+  - (L = length of the word)
+
+### 13. Union-Find (Disjoint Set)
+- Data structure for tracking connected components.
+- Supports:
+  - `find(x)`
+  - `union(x, y)`
+- **Time Complexity:**
+  - With path compression & union by rank: **O(α(n))** (almost constant)
+
+### 14. Graph Traversals (BFS & DFS)
+- Methods to traverse nodes of a graph.
+- Supports:
+  - Breadth-First Search (BFS)
+  - Depth-First Search (DFS)
+- **Time Complexity:** O(V + E)
